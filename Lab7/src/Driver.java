@@ -46,27 +46,28 @@ public class Driver {
 		linkedStack.push(2);
 
 		// while loop to pop off each integer one by one
+		int j = 1;
 		while (!linkedStack.isEmpty()) {
-			System.out.println("Step " + i + " pop off integer " + linkedStack.pop());
-			i++;
+			System.out.println("Step " + j + " pop off integer " + linkedStack.pop());
+			j++;
 		}
 
 		// print message that stack is empty
 		System.out.println("Stack is now empty. \n");
-		
+
 		LinkedStack linkedStack2 = new LinkedStack();
-		
+
 		// push integers back into linkedStack
 		linkedStack2.push(1);
 		linkedStack2.push(7);
 		linkedStack2.push(3);
 		linkedStack2.push(4);
 		linkedStack2.push(9);
-		linkedStack2.push(2);	
+		linkedStack2.push(2);
 
 		// call on method removeBottomHalf and pass linkedStack
 		linkedStack2.removeBottomHalf();
-		
+
 		// print out bottom half of LinkedStack
 		System.out.println("Bottom half of LinkedStack = " + linkedStack2);
 	}
