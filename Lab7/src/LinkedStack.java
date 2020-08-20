@@ -4,10 +4,10 @@
 	* which removes the half of elements sitting at the bottom of the stack.
 	* Test the method using the Driver program. 
 	* 
-	* What is the time complexity of this method? o((n-i) x 0.5n) or O(n)^2
-	* Every time an element is removed from the list the indexes must be reordered.
-	* Elements are removed n/2 times because we want half of the list. The big-O notation 
-	* then would be O(n)^2.
+	* What is the time complexity of this method? o((n) x 0.5n) or O(n)^2
+	* In order to remove the last element the computer must traverse through all of the
+	* nodes in the linked stack. Nodes are removed n/2 times because we want half of the 
+	* list. The big-O notation then would be O(n)^2.
 	*/
 
 // This class implements a Stack ADT as a linked list
