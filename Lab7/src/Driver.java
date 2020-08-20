@@ -27,9 +27,6 @@ public class Driver {
 		arrayStack.push(9);
 		arrayStack.push(2);
 
-		// print out ArrayStack
-		System.out.println("ArrayStack = " + arrayStack);
-
 		// while loop to pop off each integer one by one
 		int i = 1;
 		while (!arrayStack.isEmpty()) {
@@ -48,9 +45,6 @@ public class Driver {
 		linkedStack.push(9);
 		linkedStack.push(2);
 
-		// print out linkedStack
-		System.out.println("LinkedStack = " + linkedStack);
-
 		// while loop to pop off each integer one by one
 		while (!linkedStack.isEmpty()) {
 			System.out.println("Step " + i + " pop off integer " + linkedStack.pop());
@@ -59,8 +53,21 @@ public class Driver {
 
 		// print message that stack is empty
 		System.out.println("Stack is now empty. \n");
+		
+		LinkedStack linkedStack2 = new LinkedStack();
+		
+		// push integers back into linkedStack
+		linkedStack2.push(1);
+		linkedStack2.push(7);
+		linkedStack2.push(3);
+		linkedStack2.push(4);
+		linkedStack2.push(9);
+		linkedStack2.push(2);	
 
 		// call on method removeBottomHalf and pass linkedStack
-		LinkedStack.removeBottomHalf(linkedStack);
+		linkedStack2.removeBottomHalf();
+		
+		// print out bottom half of LinkedStack
+		System.out.println("Bottom half of LinkedStack = " + linkedStack2);
 	}
 }
